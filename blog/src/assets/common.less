@@ -1,0 +1,50 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+#app,
+html,
+body {
+  height: 100%;
+}
+a {
+  color: green;
+  text-decoration: none;
+}
+.el-button {
+  font-size: 18px !important;
+  border-radius: 5px !important;
+  background: rgb(255, 255, 255) !important;
+  color: green !important;
+}
+.el-button:hover {
+  color: rgb(6, 10, 6) !important;
+  background: #fff !important;
+}
+#app {
+  display: grid;
+  grid-template-columns: 12% auto 12%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header header header'
+    '.      main  .'
+    'footer footer footer';
+
+  #header {
+    grid-area: header;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  #main {
+    grid-area: main;
+  }
+
+  #footer {
+    grid-area: footer;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
